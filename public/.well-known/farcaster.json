@@ -1,0 +1,33 @@
+{
+  "miniapp": {
+    "version": "1",
+    "name": "Farcaster Explorer",
+    "iconUrl": "https://usdozf7pplhxfvrl.public.blob.vercel-storage.com/thumbnail_cmij0eo7d000004l1bn7b1wrq-BXT3HaSncdvzHnUxepVYVn72sLeiqn",
+    "homeUrl": "https://story-strip-906.app.ohara.ai",
+    "subtitle": "profil explore",
+    "description": "Explore Farcaster profiles, check your Neynar score, and schedule posts on Base. Discover your influence level and share your profile with the community",
+    "imageUrl": "https://usdozf7pplhxfvrl.public.blob.vercel-storage.com/thumbnail_cmij0eo7d000004l1bn7b1wrq-BXT3HaSncdvzHnUxepVYVn72sLeiqn",
+    "buttonTitle": "Explore Profiles",
+    "splashImageUrl": "https://usdozf7pplhxfvrl.public.blob.vercel-storage.com/thumbnail_cmij0eo7d000004l1bn7b1wrq-BXT3HaSncdvzHnUxepVYVn72sLeiqn",
+    "splashBackgroundColor": "#8a63d2",
+    "tags": [
+      "ohara",
+      "mini-app",
+      "base",
+      "farcaster"
+    ],
+    "primaryCategory": "entertainment",
+    "ogTitle": "Farcaster Explorer",
+    "ogImageUrl": "https://usdozf7pplhxfvrl.public.blob.vercel-storage.com/thumbnail_cmij0eo7d000004l1bn7b1wrq-BXT3HaSncdvzHnUxepVYVn72sLeiqn"
+  },
+  "baseBuilder": {
+    "allowedAddresses": [
+      ""
+    ]
+  },
+  "accountAssociation": {
+    "header": "eyJmaWQiOjMwMTc3NiwidHlwZSI6ImN1c3RvZHkiLCJrZXkiOiIweDkwNDk0NGU4NDUzZEJlM2VCN2U5Y0E2QWUxNTYxMmZDNGY0OUE4Y2IifQ",
+    "payload": "eyJkb21haW4iOiJzdG9yeS1zdHJpcC05MDYuYXBwLm9oYXJhLmFpIn0",
+    "signature": "6OcLd2NXQdF9Vp4loS2dOV1GRQAJxUrisZJXKWLnAZ0YvUntXqwLgpbrlGg0oc1gvZDhyxhcQMsvDpsGUUrBPxw="
+  }
+}
