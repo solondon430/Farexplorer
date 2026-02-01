@@ -141,37 +141,23 @@ export default function FarcasterExplorer() {
       let response
       
       if (isFid) {
-        response = await fetch('/api/proxy', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            protocol: 'https',
-            origin: 'api.neynar.com',
-            path: `/v2/farcaster/user/bulk?fids=${searchQuery}`,
-            method: 'GET',
-            headers: {
-              'accept': 'application/json',
-              'x-api-key': '2D812E54-6373-4A2D-902F-0FDAD0AFA754'
-            }
-          })
-        })
+        response = await fetch('/api/neynar-proxy', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    type: 'fid',
+    query: searchQuery
+  })
+})
       } else {
-        response = await fetch('/api/proxy', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            protocol: 'https',
-            origin: 'api.neynar.com',
-            path: `/v2/farcaster/user/by_username?username=${encodeURIComponent(searchQuery)}`,
-            method: 'GET',
-            headers: {
-              'accept': 'application/json',
-              'x-api-key': '2D812E54-6373-4A2D-902F-0FDAD0AFA754'
-            }
-          })
-        })
-      }
-
+        response = await fetch('/api/neynar-proxy', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    type: 'username',
+    query: searchQuery
+  })
+})
       const data = await response.json()
       
       let userData: NeynarUser | null = null
